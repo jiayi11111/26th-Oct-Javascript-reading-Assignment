@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <title>Chapter 5 exercise</title>
+
+  </head>
+  <body>
+
+    <h1> check the Console.log</h1>
+    <main>
+    </main>
+    <script>
+//Let's pretend the JavaScript Math.min() function doesn't exist. Complete the following program so that the min() function returns the minimum of its two received numbers.
+function min(a,b){
+    if(a>b){
+        return b;
+    }if(b>a){
+        return a;
+    }if(a=b){
+        return a;
+    }
+}
+
+// TODO: write the min() function
+
+console.log(min(4.5, 5)); // Must show 4.5
+console.log(min(19, 9));  // Must show 9
+console.log(min(1, 1));   // Must show 1
+       //Complete the following program so that it offers the four basic arithmetical operations: addition, subtraction, multiplication and division. You can use either a function declaration or a function expression.   
+        function calculate(a,operate,b){
+            if(operate==="+"){
+               
+                return a+b;
+
+            }if(operate==="-"){
+                return a-b;
+            }if (operate==="*"){
+                return a*b;
+            }else if (operate==="/"){
+                return a/b;
+            }
+        }
+        // TODO: complete program
+
+console.log(calculate(4, "+", 6));  // Must show 10
+console.log(calculate(4, "-", 6));  // Must show -2
+console.log(calculate(2, "*", 0));  // Must show 0
+console.log(calculate(12, "/", 0)); // Must show Infinity
+    </script>
+  </body>
+</html>
